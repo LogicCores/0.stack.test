@@ -10,8 +10,7 @@ function init {
 	BO_deriveSelfDir ___TMP___ "$BO_SELF_BASH_SOURCE"
 	local __BO_DIR__="$___TMP___"
 
-    BO_sourcePrototype "$__BO_DIR__/activate.sh"
-
+	_OUR_BASE_DIR="$__BO_DIR__"
 
 	function ReInstall {
 		Install "reinstall"
@@ -21,9 +20,9 @@ function init {
 		BO_format "$VERBOSE" "HEADER" "Installing ..."
 
 
-		pushd "$__BO_DIR__/../Components/admin" > /dev/null
+		pushd "$_OUR_BASE_DIR/../Components" > /dev/null
 	        if [ ! -e "bower_components" ] || [ "$1" == "reinstall" ]; then
-				"$__BO_DIR__/../../cores/export/for/bower/node_modules/.bin/bower" install --allow-root --config.interactive=false
+				"$_OUR_BASE_DIR/../../cores/export/for/bower/node_modules/.bin/bower" install --allow-root --config.interactive=false
 	       	fi
 		popd > /dev/null
 
