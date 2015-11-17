@@ -1,13 +1,16 @@
 
-<div class="ui basic segment">
-    <form class="ui form">
-        <div class="fields">
-          <div class="field">
-            <div component:id="dropdown" component:impl="0-test/TableFilter/Dropdown"/>
-          </div>
-        </div>
-    </form>
-</div>
+<script language="html">
+    <div class="ui basic segment">
+        <form class="ui form">
+            <div class="fields">
+              <div class="field">
+                <div component:id="dropdown" component:impl="0-test/TableFilter/Dropdown"/>
+              </div>
+            </div>
+        </form>
+    </div>
+</script>
+
 
 <script component:id="dropdown" component:location="window">
 exports.main = function (LIB, globalContext) {

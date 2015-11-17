@@ -1,22 +1,26 @@
 
 # Header
 
-<div component:id="context">
-    <div component:view="list">
-        <button class="ui button" data-component-action="new">New</button>
-
+<script language="html">
+    <div component:id="context">
+        <div component:view="list">
+            <button class="ui button" data-component-action="new">New</button>
+    
+        </div>
+    
+        <div component:view="edit">
+            <button class="ui button" data-component-action="back">Back</button>
+    
+    
+            <div component:id="dropdown" component:impl="0-test/TableFilter/Dropdown"/>
+        </div>
     </div>
-
-    <div component:view="edit">
-        <button class="ui button" data-component-action="back">Back</button>
-
-
-        <div component:id="dropdown" component:impl="0-test/TableFilter/Dropdown"/>
-    </div>
-</div>
+</script>
 
 
 # Footer
+
+Footer text
 
 
 <script component:id="context" component:location="window">

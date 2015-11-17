@@ -1,14 +1,15 @@
 
-<div component:id="list">
-    <ul component:section="item">
-        <li component:section="item" component:view="default">
-            <span component:prop="label">Label</span> <button class="ui button" data-component-action="tag-time" data-id="{{id}}">
-                Tag Time
-            </button>
-        </li>
-    </ul>
-</div>
-
+<script language="html">
+    <div component:id="list">
+        <ul component:section="item">
+            <li component:section="item" component:view="default">
+                <span component:prop="label">Label</span> <button class="ui button" data-component-action="tag-time" data-id="{{id}}">
+                    Tag Time
+                </button>
+            </li>
+        </ul>
+    </div>
+</script>
 
 <script component:id="list" component:location="window">
 exports.main = function (LIB, globalContext) {
