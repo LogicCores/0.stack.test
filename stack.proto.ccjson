@@ -80,6 +80,9 @@
             "${{ARG.namespace}}.static.fs.cache.path()->cachePath": {
                 "namespace": "test.intern"
             },
+            "${{ARG.namespace}}.static.fs.cache.path()->testResultPath": {
+                "namespace": "test.intern.result"
+            },
             "${{ARG.namespace}}.context.server.api()->context": {
                 "adapter": "test.intern"
             },
